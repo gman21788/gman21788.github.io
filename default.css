@@ -1,0 +1,46 @@
+body {
+  	margin: 30px;
+  	font-family: georgia;
+  	background-color: #acb7ae;
+  	font-size: 100%;
+}
+main {
+	background-color: #101357;
+	color: #82716e;
+	padding-top: 50px;
+    	padding-right: 30px;
+    	padding-bottom: 50px;
+    	padding-left: 30px;
+}
+	
+a {
+	color: #82716e;
+}
+ul {
+	background-color: #101357;
+	color: #c2b490;
+}
+footer {
+	text-align: center;
+}
+.hobby {
+	text-align: center;
+}
+figure {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.table {
+	border: 5px #c2b490;
+	margin-left: auto;
+	margin-right: auto;
+}
+td {
+	border: 2px solid #c2b490;
+	color: #c2b490;
+	text-align: center;
+}
+.recipehead {
+	text-align: center;
+}
