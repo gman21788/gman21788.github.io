@@ -1,10 +1,10 @@
 body {
-  margin: 30px;
-  font-family: georgia;
-  background-color: #FAF2C3;
-  color: #546391;
-  font-size: 100%;
-  text-align: center;
+	margin: 30px;
+	font-family: georgia;
+	background-color: #FAF2C3;
+	color: #546391;
+	font-size: 100%;
+	text-align: center;
 }
 
 figure {
@@ -21,15 +21,15 @@ footer {
 	text-align: center;
 
 .topnav {
-  background-color: #FAF2C3;
-  overflow: hidden;
+	background-color: #FAF2C3;
+	overflow: hidden;
 }
 
 .topnav a {
-  float: left;
-  color: #53C7F0;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+	float: left;
+	color: #53C7F0;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
 }
