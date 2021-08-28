@@ -20,13 +20,11 @@ a {
 footer {
 	text-align: center;
 
-/* Add a black background color to the top navigation */
 .topnav {
   background-color: #FAF2C3;
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   color: #53C7F0;
