@@ -14,8 +14,24 @@ figure {
 }
 
 a {
-	color: #87E0FF;
+	color: #53C7F0;
 }
 
 footer {
 	text-align: center;
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #FAF2C3;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #53C7F0;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
