@@ -5,7 +5,7 @@ body {
   	font-size: 100%;
 }
 main {
-	background-color: #101357;
+	background-color: #FAF2C3;
 	color: #82716e;
 	padding-top: 50px;
     	padding-right: 30px;
@@ -17,7 +17,7 @@ a {
 	color: #82716e;
 }
 ul {
-	background-color: #101357;
+	background-color: #FAF2C3;
 	color: #c2b490;
 }
 footer {
@@ -30,18 +30,5 @@ figure {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-}
-.table {
-	border: 5px #c2b490;
-	margin-left: auto;
-	margin-right: auto;
-}
-td {
-	border: 2px solid #c2b490;
-	color: #c2b490;
-	text-align: center;
-}
-.recipehead {
-	text-align: center;
 }
 
