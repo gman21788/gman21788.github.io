@@ -4,31 +4,3 @@ body {
   	background-color: #FAF2C3;
   	font-size: 100%;
 }
-main {
-	background-color: #FAF2C3;
-	color: #82716e;
-	padding-top: 50px;
-    	padding-right: 30px;
-    	padding-bottom: 50px;
-    	padding-left: 30px;
-}
-	
-a {
-	color: #82716e;
-}
-ul {
-	background-color: #FAF2C3;
-	color: #c2b490;
-}
-footer {
-	text-align: center;
-}
-.hobby {
-	text-align: center;
-}
-figure {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-}
-
