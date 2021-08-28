@@ -4,6 +4,7 @@ body {
   background-color: #FAF2C3;
   color: #546391;
   font-size: 100%;
+  text-align: center;
 }
 
 figure {
@@ -15,3 +16,6 @@ figure {
 a {
 	color: #87E0FF;
 }
+
+footer {
+	text-align: center;
