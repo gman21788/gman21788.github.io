@@ -4,7 +4,7 @@ function getVars() {
 	let lastName = document.getElementById('lastName').value;
 	document.getElementById('greeting').textContent = 'Welcome to the Crab Shack, ' + firstName + ' ' + middleInit + ' ' + lastName + '!';
 
-	let counter = prompt('How many lines are you looking to buy ${firstName}?');
+	let numLines = prompt('How many lines are you looking to buy ${firstName}?');
 	fizzBuzz(numLines);	
 	}
 
