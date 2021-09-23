@@ -7,19 +7,3 @@ function getVars() {
 	let numLines = prompt('How many lines are you looking to buy ${firstName}?');
 	fizzBuzz(numLines);	
 	}
-
-function fizzBuzz(numLines) {
-	for(let i = 0; i <= numLines; i++ {
-		var num;
-		if (i % 2 === 0) {
-			num = 'the number is even';
-		} else {
-			num = 'the number is odd';
-		}
-		var listElement = document.createElement('li');
-		var textNode = document.createTextNode(i + ' Hot & Heavy ' + num;
-		listElement.appendChild(textNode);
-		var findPosition = document.getElementsByTagName('ul')[0];
-		findPosition.appendChild(listElement);
-	}
-}
