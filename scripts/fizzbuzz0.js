@@ -8,7 +8,7 @@ function getVars() {
 	fizzBuzz(numLines);	
 	}
 
-funtion fizzBuzz(counter) {
+function fizzBuzz(counter) {
 	for(let i = 0; i <= counter; i++ {
 		var num;
 		if (i % 2 === 0) {
