@@ -8,8 +8,8 @@ function getVars() {
 	fizzBuzz(numLines);	
 	}
 
-function fizzBuzz(numLines) {
-	for(let i = 0; i <= numLines; i++) {
+function fizzBuzz(numLinesCounter) {
+	for(let i = 0; i <= numLinesCounter; i++) {
 		var num;
 		if (i % 2 === 0) {
 			num = 'the number is even';
