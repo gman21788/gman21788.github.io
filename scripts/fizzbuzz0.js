@@ -8,18 +8,33 @@ function getVars() {
 	fizzBuzz(numLines);	
 	}
 
-function fizzBuzz(numLinesCounter) {
-	for(let i = 0; i <= numLinesCounter; i++) {
-		var num;
-		if (i % 2 === 0) {
-			num = 'the number is even';
-		} else {
-			num = 'the number is odd';
-		}
-		var listElement = document.createElement('li');
-		var textNode = document.createTextNode(i + ' Hot & Heavy ' + num;
-		listElement.appendChild(textNode);
-		var findPosition = document.getElementsByTagName('ul')[0];
-		findPosition.appendChild(listElement);
-	}
+function fizzbuzz(counter) {
+for(let i = 0; i <= counter; i++) {
+  var evenOdd;
+  
+  if (i % 2 === 0) {
+    evenOdd = 'this is an even number';
+  } else {
+    evenOdd = 'this is an odd number';
+  }
+
+
+
+    //creates new element & stores in variable
+    var element_1 = document.createElement('li');
+    
+    //text node variable and components
+    var text = document.createTextNode(i + ' Easy Peasy ||' + evenOdd);
+    
+    //text node and new element attach
+    element_1.appendChild(text);
+    
+    //element's postition
+    var pos_new = document.getElementsByTagName('ul')[0];
+    
+    //corrects position
+    pos_new.appendChild(element_1);
+    
+  }
+  
 }
