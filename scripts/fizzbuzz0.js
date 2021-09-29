@@ -18,21 +18,14 @@ for(let i = 0; i <= lineCounter; i++) {
     evenOdd = 'this is an odd number';
   }
 
-
-
-    //creates new element & stores in variable
     var element_1 = document.createElement('li');
+
+    var text = document.createTextNode(i + ' Hot & Heavy' + evenOdd);
     
-    //text node variable and components
-    var text = document.createTextNode(i + ' Easy Peasy ||' + evenOdd);
-    
-    //text node and new element attach
     element_1.appendChild(text);
     
-    //element's postition
     var pos_new = document.getElementsByTagName('ul')[0];
     
-    //corrects position
     pos_new.appendChild(element_1);
     
   }
