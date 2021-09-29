@@ -8,8 +8,8 @@ function getVars() {
 	fizzBuzz(numLines);	
 	}
 
-function fizzbuzz(counter) {
-for(let i = 0; i <= counter; i++) {
+function fizzbuzz(lineCounter) {
+for(let i = 0; i <= lineCounter; i++) {
   var evenOdd;
   
   if (i % 2 === 0) {
