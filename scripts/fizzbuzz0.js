@@ -20,9 +20,9 @@ for(let i = 0; i <= lineCounter; i++) {
 
     var element_1 = document.createElement('li');
 
-    var text = document.createTextNode(i + ' Hot & Heavy' + evenOdd);
+    var newText = document.createTextNode(i + ' Hot & Heavy' + evenOdd);
     
-    element_1.appendChild(text);
+    element_1.appendChild(newText);
     
     var pos_new = document.getElementsByTagName('ul')[0];
     
