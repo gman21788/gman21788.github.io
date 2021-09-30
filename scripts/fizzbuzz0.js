@@ -18,13 +18,13 @@ for(let i = 0; i <= lineCounter; i++) {
     evenOdd = 'this is an odd number';
   }
 
-    var element_1 = document.createElement('li');
+    var element1 = document.createElement('li');
 
     var newText = document.createTextNode(i + ' Hot & Heavy' + evenOdd);
     
-    element_1.appendChild(newText);
+    element1.appendChild(newText);
     
-    var pos_new = document.getElementsByTagName('ul')[0];
+    var pos_new = document.getElementsByTagName('li')[0];
     
     pos_new.appendChild(element_1);
     
