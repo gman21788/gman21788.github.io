@@ -24,7 +24,7 @@ for(let i = 0; i <= lineCounter; i++) {
     
     element1.appendChild(newText);
     
-    var pos_new = document.getElementsById('ul')[0];
+    var pos_new = document.getElementsByTagName('ul')[0];
     
     pos_new.appendChild(element_1);
     
