@@ -20,7 +20,7 @@ for(let i = 0; i <= lineCounter; i++) {
 
     var element1 = document.createElement('li');
 
-    var newText = document.createTextNode(i + ' Hot & Heavy' + evenOdd);
+    var newText = document.createTextNode(i + ' Hot & Heavy ' + evenOdd);
     
     element1.appendChild(newText);
     
