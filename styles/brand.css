@@ -43,14 +43,14 @@ footer
 	margin: 0 auto;
 }
 		
-nav ul
+nav .topnavul
 {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 	
-nav li
+nav .topnavli
 {
 	display: inine-block;
 	margin-left: 20px;
