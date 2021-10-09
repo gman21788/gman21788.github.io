@@ -4,20 +4,21 @@ body
   	font-family: georgia;
   	background-color: #acb7ae;
   	font-size: 100%;
+	color: #F1EB9C
 }
 main 
 {
 	background-color: #101357;
 	color: #82716e;
-	padding-top: 50px;
-    	padding-right: 30px;
-    	padding-bottom: 50px;
-    	padding-left: 30px;
+	padding-top: 25px;
+    	padding-right: 15px;
+    	padding-bottom: 25px;
+    	padding-left: 15px;
 }
 	
 a 
 {
-	color: #82716e;
+	color: #F1EB9C;
 }
 ul 
 {
@@ -27,6 +28,7 @@ ul
 footer 
 {
 	text-align: center;
+	color: #F1EB9C
 }
 
 figure 
