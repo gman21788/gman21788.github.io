@@ -55,6 +55,7 @@ nav li
 	display: inine-block;
 	margin-left: 70px;
 	padding-top: 23px;
+	float: left;
 	
 	position: relative;
 }	
