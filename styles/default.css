@@ -1,10 +1,12 @@
-body {
+body 
+{
   	margin: 30px;
   	font-family: georgia;
   	background-color: #acb7ae;
   	font-size: 100%;
 }
-main {
+main 
+{
 	background-color: #101357;
 	color: #82716e;
 	padding-top: 50px;
@@ -13,34 +15,35 @@ main {
     	padding-left: 30px;
 }
 	
-a {
+a 
+{
 	color: #82716e;
 }
-ul {
+ul 
+{
 	background-color: #101357;
 	color: #c2b490;
 }
-footer {
+footer 
+{
 	text-align: center;
 }
-.hobby {
-	text-align: center;
-}
-figure {
+
+figure 
+{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 }
-.table {
+table 
+{
 	border: 5px #c2b490;
 	margin-left: auto;
 	margin-right: auto;
 }
-td {
+td 
+{
 	border: 2px solid #c2b490;
 	color: #c2b490;
-	text-align: center;
-}
-.recipehead {
 	text-align: center;
 }
