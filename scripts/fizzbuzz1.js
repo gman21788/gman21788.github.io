@@ -8,7 +8,7 @@ function getVars() {
 	}
 
 function fizzBuzz() {
-   for(let i = 0; i <= 140; i++) {
+   for(let i = 1; i <= 140; i++) {
      var word = '';
   
      if (i % 15 === 0) {
