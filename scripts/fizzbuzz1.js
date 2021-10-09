@@ -31,7 +31,7 @@ function fizzBuzz() {
     
     element1.appendChild(newText);
     
-    var pos_new = document.getElementsByTagName('ul')[0];
+    var pos_new = document.getElementsByTagName('ol')[0];
     
     pos_new.appendChild(element1);
     
