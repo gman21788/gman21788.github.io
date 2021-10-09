@@ -23,6 +23,14 @@ a
 header
 {
 	background: #FAF2C3;
+}
+
+header::after 
+{
+	content: '';
+	display: table;
+	clear: both;
+}
 
 footer 
 {
@@ -37,6 +45,8 @@ footer
 	
 nav
 {
+	float: right;
+}
 	
 nav ul
 {
@@ -50,6 +60,7 @@ nav li
 	display: inine block;
 	margin-left: 70px;
 	padding-top: 23px;
+	
 	position: relative;
 }	
 
@@ -82,7 +93,7 @@ nav a::before
 	
 nav a:hover::before
 {
-	width: 100;
+	width: 100%;
 }
 	
 	
