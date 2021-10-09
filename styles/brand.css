@@ -33,6 +33,7 @@ footer
 	
 .topnav a 
 {
+	float: left;
 	color: #53C7F0;
 	text-align: center;
 	padding: 14px 16px;
