@@ -52,11 +52,10 @@ nav .topnavul
 	
 nav .topnavli
 {
-	display: inine-block;
+	display: inline-block;
 	margin-left: 20px;
 	padding-top: 23px;
 	float: left;
-	text-alignment: center;
 	
 	position: relative;
 }	
