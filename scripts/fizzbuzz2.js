@@ -2,22 +2,35 @@ function getVars() {
 	let firstName = document.getElementById('firstName').value;
 	let middleInit = document.getElementById('middleInit').value;	
 	let lastName = document.getElementById('lastName').value;
+	let firstDivisor = 3;
+	let secondDivisor = 5;
+	
 	document.getElementById('greeting').textContent = 'Welcome to the Crab Shack, ' + firstName + ' ' + middleInit + ' ' + lastName + '!';
 
-	fizzBuzz();	
+	fizzBuzz(firstDivisor, secondDivisor);	
 	}
 
-function fizzBuzz() {
+function isDivisible(firstDivisor, secondDivisor) {
+	if (firstDivisor % secondDivisor === 0) {
+		return true;
+	} 
+	else {
+		return false;
+	}
+}
+
+
+function fizzBuzz(firstDivisor, secondDivisor) {
    for(let i = 1; i <= 140; i++) {
      var word = '';
   
-     if (i % 15 === 0) {
+     if (i % (firstDivisor * secondDivisor) === 0) {
        word = word.concat('HotHEAVY');
      }
-     else if (i % 3 === 0) {
+     else if (i % firstDivisor === 0) {
        word = word.concat('Hot');
      }
-     else if (i % 5 === 0) {
+     else if (i % secondDivisor === 0) {
        word = word.concat('HEAVY');
      }
      else {
