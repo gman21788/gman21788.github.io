@@ -16,7 +16,6 @@ function isDivisible(firstDivisor, secondDivisor) {
 	}
 }
 
-
 function fizzBuzz(firstDivisor, secondDivisor) {
    	for(let i = 1; i <= 140; i++) {
      		var word = '';  
@@ -29,7 +28,6 @@ function fizzBuzz(firstDivisor, secondDivisor) {
 		} else {
        		word = word.concat('Order Crabs!');
      	}
-
 	var element1 = document.createElement('li');
 	var newText = document.createTextNode(' ' + word);   
 	element1.appendChild(newText);    
