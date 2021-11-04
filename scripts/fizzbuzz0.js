@@ -20,5 +20,5 @@ for(let i = 0; i <= lineCounter; i++) {
     	element1.appendChild(newText);
     	var pos_new = document.getElementsByTagName('ol')[0];
     	pos_new.appendChild(element1);
-  }  
+  	}  
 }
