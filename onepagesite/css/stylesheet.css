@@ -1,0 +1,1120 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:	border-box;
+    border: none;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+body{
+	line-height: 1;
+	background: #fff;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+	display: block;
+}
+li{
+	list-style-type: none;
+}
+blockquote, q{
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after{
+	content: '';
+	content: none;
+}
+a{
+	text-decoration: underline;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+a:hover{
+	text-decoration: none;
+}
+ins{
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+mark{
+	background-color:#ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+del{
+	text-decoration: line-through;
+}
+abbr[title], dfn[title]{
+	border-bottom: 0.063em dotted;
+	cursor: help;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+hr{
+	display: block;
+	height: 0.063rem;
+	border: 0;
+	border-top: 0.063rem solid #cccccc;
+	margin: 1rem 0;
+	padding: 0;
+}
+input, select{
+	vertical-align: middle;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+/* end of stylesheet reset */
+body{
+	background: #fff2ed;
+}
+/* start of navigation menu styles  */
+#toggle{
+	position: fixed;
+	z-index: 999;
+	width: 3rem;
+	height: 3rem;
+	top: 0;
+	right: 0;
+	margin: 0.938rem 0.938rem 0 0;
+	padding: 0 0 0 .1rem;
+	cursor: pointer;
+}
+#toggle span{
+	display: block;
+	position: absolute;
+	width: 90%;
+	height: 0.4rem;
+	margin: 1.25rem 0 0 0;
+	background: #efefef;
+	-webkit-transition: 350ms ease all;
+	-moz-transition: 350ms ease all;
+	transition: 350ms ease all;
+}
+#toggle span:before, #toggle span:after{
+	content: " ";
+	position: absolute;
+	width: 100%;
+	height: 0.4rem;
+	background: #efefef;
+	-webkit-transition: 350ms ease all;
+	-moz-transition: 350ms ease all;
+	transition: 350ms ease all;
+}
+#toggle span:before{
+	margin: -1rem 0 0 0;
+}
+#toggle span:after{
+	margin: 1rem 0 0 0;
+}
+#toggle.open span{
+	background-color: transparent;
+}
+#toggle.open span:before, #toggle.open span:after{
+	margin: 0;
+	background: #efefef;
+}
+#toggle.open span:before{
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+#toggle.open span:after{
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+}
+#menu{
+	visibility: hidden;
+	opacity: 0;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: .5rem 0 0 0;
+	text-align: center;
+	background: rgba(0, 0, 0 ,0.9);
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: 350ms ease all;
+	-moz-transition: 350ms ease all;
+	transition: 350ms ease all;
+}
+#menu.opened{
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: 350ms ease all;
+	-moz-transition: 350ms ease all;
+	transition: 350ms ease all;
+}
+#menu ul{
+	list-style: none;
+	margin: 0 auto;
+}
+#menu ul li{
+	display: block;
+	width: 90%;
+	height: 3.3rem;
+	margin: 0 auto 0.5rem auto;
+	padding: 0;
+}
+#menu ul li:after{
+	content: " ";
+	position: absolute;
+	width: 0%;
+	height: 3.3rem;
+	margin: -3.3rem 0 0 5%;
+	left: 0;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 0.25rem;
+}
+#menu ul li:hover:after{
+	width: 90%;
+}
+#menu ul li a{
+	position: relative;
+	z-index: 4;
+	display: block;
+	width: 100%;
+	height: 3.3rem;
+	line-height: 3.3rem;
+	margin: 0 auto;
+	color: #efefef;
+	text-decoration: none;
+	font-size: 1.2rem;
+	-webkit-transition: 350ms ease all;
+	-moz-transition: 350ms ease all;
+	transition: 350ms ease all;
+}
+#menu ul li a:hover{
+	color: #000;
+	border-color: #efef;
+}
+#menu ul li a span{
+	font-family: 'Lobster', cursive;
+	font-size: 1.66667rem;
+}
+/* end of navigation menu styles  */
+/* start of the header styles */
+#header-wrap{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	opacity: .9;
+	background: #212121;
+	transition: 3s;
+}
+#header-wrap.hide-header{
+	z-index: -1;
+	opacity: 0;
+}
+#header-wrap h1{
+	text-align: center;
+	margin: 0;
+	padding: .5rem 0;
+	font-size: 3.5rem;
+	font-weight: normal;
+	font-family: 'Lobster', cursive;
+	color: #efefef;
+}
+#header-wrap h1 a, #header-wrap h1 a:hover{
+	text-decoration: none;
+	color: #efefef;
+}
+/* end of the header styles */
+/* start of the styles for the content area */
+#main-wrap{
+	position: relative;
+	top: 0;
+	left: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+	font-family: 'Lobster', cursive;
+    background: url("../images/bg-1920x1080.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#main-wrap .main-pane{
+    width: 100%;
+    margin: 0;
+}
+#main-wrap .main-pane .main-bg{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    opacity: .75;
+    background: #000;
+    display: flex;
+}
+#main-wrap .main-pane .main-bg .main-content{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding: 0;
+}
+.main-bg .main-content .main-content-circle{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 18.75rem;
+	height: 18.75rem;
+	margin: 0 auto;
+	padding: 0;
+	border: 1px solid white;
+	border-radius: 100%;
+	background: white;
+}
+.main-bg .main-content .main-content-circle h1{
+	text-align: center;
+	margin: 0;
+	padding: .5rem;
+	line-height: 3.8rem;
+	font-size: 3.5em;
+	font-weight: normal;
+	font-family: 'Lobster', cursive;
+	color: #000;
+}
+/* end of the styles for the content area */
+/* start of the address area styles */
+#hours{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: .5rem 0;
+    border: none;
+}
+#hours h3{
+	text-align: center;
+	margin: 0;
+	padding: .5rem;
+	line-height: 2.8rem;
+	font-size: 2.5rem;
+	font-weight: normal;
+	font-family: 'Lobster', cursive; /* Google Font */
+	color: #000;
+}
+#hours p{
+	text-align: center;
+	margin: 0;
+	padding: .5rem;
+    line-height: 2.5rem;
+	font-size: 2.2rem;
+	font-weight: normal;
+	font-family: 'Lobster', cursive; /* Google Font */
+	color: #000;
+}
+/* end of the address area styles */
+/* start of the address area styles */
+#address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: .5rem 0;
+}
+#address p{
+	text-align: center;
+	margin: 0;
+	padding: .5rem;
+    line-height: 2.5rem;
+	font-size: 2.2rem;
+	font-weight: normal;
+	font-family: 'Lobster', cursive; /* Google Font */
+	color: #000;
+}
+/* end of the address area styles */
+/* start of styles for the centered phone area */
+#phone-area{
+	clear: both;
+	width: 100%;
+	height: 8.75rem;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+#phone-area .inner-phone-area{
+	text-align: center;
+	width: 28rem;
+	height: 8.75rem;
+	margin: 0 auto;
+	padding: 1rem 0 1rem 4.688rem;
+	background: url("../images/phone.png") 0 1.1rem no-repeat;
+}
+#phone-area .inner-phone-area h3{
+	margin: 0;
+	padding: 0.5rem 0;
+	color: #000;
+	font-size: 2.5rem;
+	font-family: 'Lobster', cursive;
+	font-weight: bold;
+}
+#phone-area .inner-phone-area p{
+	margin: 0;
+	padding: 0.313rem 0;
+	color: #000;
+	font-size: 1.8rem;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+}
+#phone-area .inner-phone-area p a[href^="tel"]{
+	text-decoration: none;
+	color: #000;
+}
+#phone-area .inner-phone-area p a{
+	text-decoration: underline;
+	color: #000;
+}
+#phone-area .inner-phone-area p a:hover{
+	text-decoration: none;
+}
+/* end of styles for the centered phone area */
+/* start of styles for text area */
+.text-wrap{
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 1.5rem 0 .5rem 0;
+    border: none;
+}
+.text-wrap .inner-text-wrap{
+    max-width: 50rem;
+	height: auto;
+	margin: 0 auto;
+	padding: 0;
+}
+.text-wrap .inner-text-wrap h3{
+	text-align: center;
+	margin: 0;
+	padding: .5rem;
+	color: #000;
+	line-height: 3.3rem;
+	font-size: 3rem;
+	font-weight: normal;
+	font-family: 'Lobster', cursive;
+}
+.text-wrap .inner-text-wrap p{
+    text-align: left;
+	margin: 0;
+	padding: .5rem;
+	line-height: 2.2rem;
+	font-size: 1.9rem;
+	font-weight: normal;
+	font-family: 'Lobster', cursive;
+	color: #000;
+}
+.text-wrap .inner-text-wrap p a{
+	text-decoration: underline;
+	color: #000;
+}
+.text-wrap .inner-text-wrap p a, .text-wrap .inner-text-wrap p a:hover{
+	text-decoration: none;
+	color: #000;
+}
+/* end of styles for the text area */
+/* start of about us area */
+.about-outer{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.about-outer .about{
+    width: 62.5rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+.about-outer .about .about-image{
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+.about-outer .about .about-text{
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+.about-outer .about figure{
+    width: 25rem;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.about-outer .about img{
+    max-width: 25rem;
+    max-height: 25rem;
+	margin: 1rem auto;
+	padding: 0;
+	border: .75rem solid #ccc;
+    box-sizing: border-box;
+	border-radius: 2rem;
+}
+.about-outer .about h3{
+	text-align: left;
+	margin: 0;
+	padding: .5rem;
+    line-height: 3.3rem;
+	font-size: 3rem;
+	font-weight: bold;
+	font-family: 'Lobster', cursive;
+	color: #000;
+}
+.about-outer .about p{
+    text-align: left;
+	margin: 0;
+	padding: .5rem;
+    line-height: 2.2rem;
+	font-size: 1.9rem;
+	font-weight: normal;
+	font-family: 'Lobster', cursive;
+	color: #000;
+}
+.about-outer .about p a{
+    text-decoration: underline;
+    color: #000;
+}
+.about-outer .about p a:hover{
+    text-decoration: none;
+}
+/* end of about us area */
+/* start of styles for the menu area */
+#menu-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+#menu-wrap .inner-menu-wrap{
+    display: flex;
+    flex-direction: row;
+	width: 62.5rem;
+	height: auto;
+	margin: auto;
+	padding: 0;
+	border: 0.125rem solid #d8b48d;
+	box-sizing: border-box;
+	border-radius: .5rem;
+	background: #f2e6d9;
+}
+#menu-wrap h3{
+	text-align: center;
+	margin: 0;
+	padding: 2rem 0;
+	color: #000;
+	line-height: 3.5rem;
+	font-size: 3.2rem;
+	font-family: 'Lobster', cursive, serif, arial, helvetica;
+	font-weight: bold;
+}
+#menu-wrap .inner-menu-wrap h4{
+	text-align: center;
+	margin: 0;
+	padding: .5rem 0 0.313rem 0;
+	color: #000;
+	line-height: 3rem;
+	font-size: 2.7rem;
+	font-family: 'Lobster', cursive, serif, arial, helvetica;
+	font-weight: bold;
+}
+#menu-wrap .inner-menu-wrap .menu{
+    flex: 1;
+	height: auto;
+	margin: 0;
+	padding: 2rem 0;
+}
+#menu-wrap .inner-menu-wrap .menu p{
+	text-align: center;
+	margin: 0;
+	padding: .5rem 0;
+	line-height: 2.1rem;
+	font-size: 1.8rem;
+	font-weight: normal;
+	font-family: 'Lobster', cursive, serif, arial, helvetica;
+}
+#menu-wrap .inner-menu-wrap .menu ul{
+	margin: 0;
+	padding: .5rem;
+}
+#menu-wrap .inner-menu-wrap .menu ul li{
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: .8rem 0;
+	line-height: 1.9rem;
+	font-size: 1.6rem;
+	font-weight: normal;
+	font-family: 'Lobster', cursive, serif, arial, helvetica;
+}
+#menu-wrap .inner-menu-wrap .menu ul li .bold-menu-text{
+	text-align: center;
+	margin: 0;
+	padding: .3rem 0;
+	font-size: 2.1rem;
+	font-weight: normal;
+	font-family: 'Lobster', cursive, serif, arial, helvetica;
+}
+#menu-wrap .inner-menu-wrap .menu ul li .price{
+    font-size: 1.5rem;
+	font-family: arial, helvetica;
+}
+#menu-wrap .inner-menu-wrap .menu br{
+    line-height: 1.2rem;
+}
+/* end of styles for the menu area */
+/* start of styles for the wine list area */
+#wine-list-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+#wine-list-wrap .inner-wine-list-wrap{
+    display: flex;
+    flex-direction: row;
+	width: 62.5rem;
+	height: auto;
+	margin: auto;
+	padding: 0;
+	border: 0.125rem solid #d8b48d;
+	box-sizing: border-box;
+	border-radius: .5rem;
+	background: #f2e6d9;
+}
+#wine-list-wrap h3{
+	text-align: center;
+	margin: 0;
+	padding: 2rem 0;
+	color: #000;
+	line-height: 3.5rem;
+	font-size: 3.2rem;
+	font-family: 'Lobster', cursive, serif, arial, helvetica;
+	font-weight: bold;
+}
+#wine-list-wrap .inner-wine-list-wrap h4{
+	text-align: center;
+	margin: 0;
+	padding: .5rem 0 0.313rem 0;
+	color: #000;
+	line-height: 2.8rem;
+	font-size: 2.5rem;
+	font-family: 'Lobster', cursive, serif, arial, helvetica;
+	font-weight: bold;
+}
+#wine-list-wrap .inner-wine-list-wrap .wine-list{
+    flex: 1;
+	height: auto;
+	margin: 0;
+	padding: 2rem 0;
+}
+#wine-list-wrap .inner-wine-list-wrap .wine-list p{
+	text-align: center;
+	margin: 0;
+	padding: .5rem 0;
+	line-height: 2.1rem;
+	font-size: 1.8rem;
+	font-weight: normal;
+	font-family: 'Lobster', cursive, serif, arial, helvetica;
+}
+#wine-list-wrap .inner-wine-list-wrap .wine-list ul{
+	margin: 0;
+	padding: .5rem;
+}
+#wine-list-wrap .inner-wine-list-wrap .wine-list ul li{
+	text-align: left;
+	list-style-type: none;
+	margin: 0;
+	padding: .6rem 0;
+	line-height: 1.7rem;
+	font-size: 1.4rem;
+	font-weight: normal;
+	font-family: arial, helvetica;
+}
+#wine-list-wrap .inner-wine-list-wrap .wine-list ul li .bold-wine-list-text{
+	text-align: center;
+	margin: 0;
+	padding: .3rem 0;
+	line-height: 1.9rem;
+	font-size: 1.6rem;
+	font-weight: normal;
+	font-family: 'Lobster', cursive, serif, arial, helvetica;
+}
+#wine-list-wrap .inner-wine-list-wrap .wine-list ul li .price{
+    font-size: 1.4rem;
+	font-family: arial, helvetica;
+}
+#wine-list-wrap .inner-wine-list-wrap .wine-list br{
+    line-height: 1.5rem;
+}
+/* end of styles for the menu area */
+/* start of image gallery styles */
+.gallery-wrapper{
+	width: 58.688rem; /* 939px */
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.gallery{
+	margin: 0;
+	padding: 0;
+}
+.gallery a{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+.gallery img{
+	transition: 1s;
+	width: 18.75rem; /* 300px */
+	height: 18.75rem; /* 300px */
+	margin: 0.313rem; /* 5px */
+	padding: 0;
+	border: 0.313rem solid #d8b48d; /* 5px */
+	box-sizing: border-box;
+	border-radius: .5rem;
+	outline: none;
+}
+.gallery img:hover{
+	filter: grayscale(100%);
+	transform: scale(1.1);
+}
+/* end of image gallery styles */
+/* start of styles for the social media icons at the bottom */
+#follow-wrap{
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 2rem 0;
+    display: flex;
+    border: none;
+}
+#follow-wrap #follow{
+	height: auto;
+	margin: auto;
+	padding: 0;
+}
+#follow-wrap #follow h3{
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 0 .3rem 0;
+	color: #000;
+	line-height: 2.5rem;
+	font-size: 2.2rem;
+	font-weight: normal;
+	font-family: 'Lobster', cursive; /* Google Font */
+}
+#follow-wrap #follow a img{
+	margin: 0 0 0 0.313rem;
+	padding: 0;
+	opacity: .4;
+	border: .2rem solid #ccc;
+	border-radius: 100%;
+	transition: all 0.5s;
+}
+#follow-wrap #follow a img:hover{
+	border: .2rem solid #212121;
+	opacity: 1;
+	transform: scale(1.5);
+}
+/* end of styles for the social media icons at the bottom */
+/* start of bottom styles */
+#bottom-wrap{
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	border-top: 0.125rem solid #d8b48d;
+	background: #f2e6d9;
+}
+#bottom-wrap #bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+	width: 62.5rem;
+	height: auto;
+	margin: 0 auto;
+	padding: 0.625rem 0;
+}
+#bottom-wrap #bottom .bottom-box{
+    flex: 1;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+#bottom-wrap #bottom .bottom-box h3{
+    text-align: left;
+	margin: 0.625rem 0;
+	padding: 0;
+	color: #000;
+	font-size: 1.7rem;
+	font-weight: normal;
+	font-family: Lobster, serif, arial, helvetica, sans-serif;
+}
+#bottom-wrap #bottom .bottom-box p{
+	margin: 0.625rem 0.313rem;
+	padding: 0;
+	line-height: 1.3rem;
+	color: #000;
+	line-height: 1.4rem;
+	font-size: 1.1rem;
+	font-weight: normal;
+	font-family: arial, helvetica, sans-serif;
+}
+#bottom-wrap #bottom .bottom-box p a[href^="tel"]{
+	text-decoration: none;
+	color: #000;
+}
+#bottom-wrap #bottom .bottom-box p a{
+	text-decoration: underline;
+	color: #000;
+}
+#bottom-wrap #bottom .bottom-box p a:hover{
+	text-decoration: none;
+}
+#bottom-wrap #bottom .bottom-box p a{
+	text-decoration: underline;
+	color: #000;
+}
+#bottom-wrap #bottom .bottom-box p a:hover{
+	text-decoration: none;
+	color: #000;
+}
+#bottom-wrap #bottom .bottom-box ul{
+	margin: 0.625rem 0.313rem;
+	padding: 0;
+}
+#bottom-wrap #bottom .bottom-box ul li{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1.8rem;
+	height: 1.563rem;
+	color: #000;
+	line-height: 1.4rem;
+	font-size: 1.1rem;
+	font-weight: normal;
+	font-family: arial, helvetica, sans-serif;
+}
+#bottom-wrap #bottom .bottom-box ul li a{
+	text-decoration: underline;
+	color: #000;
+}
+#bottom-wrap #bottom .bottom-box ul li a:hover{
+	text-decoration: none;
+	color: #000;
+}
+/* end of bottom styles */
+/* start of styles for the footer */
+#footer-wrap{
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 1.5rem 0;
+	border: none;
+	outline: none;
+	background: #f2e6d9;
+}
+#footer-wrap p{
+	text-align: center;
+	margin: 0;
+	padding: .2rem .2rem .5rem .2rem;
+	line-height: 1.7rem;
+	font-size: 1.4rem;
+	font-weight: normal;
+	font-family: 'Lobster', cursive; /* Google Font */
+	color: #000;
+}
+#footer-wrap p a{
+    text-decoration: underline;
+    color: #000;
+}
+#footer-wrap p a:hover{
+    text-decoration: none;
+}
+/* end of styles for the footer */
+@media(max-width: 65.625rem){ /* 1,050px */
+    #menu-wrap .inner-menu-wrap{
+        flex-direction: column;
+    }
+	#menu-wrap .inner-menu-wrap{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border-top: 0.125rem solid #d8b48d;
+		border-right: none;
+		border-bottom: 0.125rem solid #d8b48d;
+		border-left: none;
+		border-radius: 0;
+	}
+	#menu-wrap .inner-menu-wrap .menu{
+		width: 50rem;
+		margin: 0 auto;
+		padding: 0;
+	}
+    #wine-list-wrap .inner-wine-list-wrap{
+        flex-direction: column;
+    }
+	#wine-list-wrap .inner-wine-list-wrap{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border-top: 0.125rem solid #d8b48d;
+		border-right: none;
+		border-bottom: 0.125rem solid #d8b48d;
+		border-left: none;
+		border-radius: 0;
+	}
+	#wine-list-wrap .inner-wine-list-wrap .wine-list{
+		width: 50rem;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+@media (max-width: 62.5rem){ /* 1000px */
+	.about-outer .about{
+		flex-direction: column;
+		width: 50rem;
+		padding: 1.5rem 0;
+	}
+	.about-outer .about h3{
+		text-align: center;
+	}
+	.about-outer .about .about-image{
+		order: 2;
+	}
+	.about-outer .about .about-text{
+		order: 1;
+	}
+    #bottom-wrap #bottom{
+        flex-direction: column;
+        width: 100%;
+    }
+    #bottom-wrap #bottom .bottom-box h3{
+        text-align: center;
+    }
+    #bottom-wrap #bottom .bottom-box ul li{
+        text-align: center;
+    }
+}
+@media(max-width: 60.625rem){ /* 970px */
+  .gallery-wrapper{
+    width: 39.063rem; /* 625px */
+  }
+}
+@media (max-width: 50rem){ /* 800px */
+	#header-wrap{
+		height: 7.1rem;
+	}
+	#header-wrap h1{
+		padding: 4rem 0 0 0;
+		font-size: 2.5rem;
+	}
+	#main-wrap{
+		background: url("../images/bg-800x800.jpg");
+		background-size: cover;
+	}
+	.main-bg .main-content .main-content-circle{
+		width: 15.625rem;
+		height: 15.625rem;
+	}
+	.main-bg .main-content .main-content-circle h1{
+		line-height: 2.8rem;
+		font-size: 2.5em;
+	}
+    #hours h3{
+        font-size: 2rem;
+    }
+    #hours p{
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+    #address p{
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+    .text-wrap .inner-text-wrap h3{
+		line-height: 2.5rem;
+        font-size: 2.2rem;
+    }
+    .text-wrap .inner-text-wrap p{
+        line-height: 1.9rem;
+        font-size: 1.6rem;
+	}
+    .about-outer .about{
+        width: 100%;
+    }
+    .about-outer .about .about-left figure, .about-outer .about .about-right figure{
+        max-width: 90%;
+        height: auto;
+    }
+    .about-outer .about figure{
+        width: 21.875rem;
+    }
+    .about-outer .about img{
+        width: 21.875rem;
+        height: 21.875rem;
+		border: .5rem solid #ccc;
+    }
+    .about-outer .about h3{
+        line-height: 2.5rem;
+        font-size: 2.2rem;
+    }
+    .about-outer .about p{
+        line-height: 1.9rem;
+        font-size: 1.6rem;
+    }
+	#menu-wrap .inner-menu-wrap .menu{
+		width: 100%;
+    }
+	#wine-list-wrap .inner-wine-list-wrap .wine-list{
+		width: 100%;
+    }
+    #menu-wrap h3{
+        font-size: 3rem;
+    }
+    #menu-wrap .inner-menu-wrap h4{
+        font-size: 2.5rem;
+    }
+    #menu-wrap .inner-menu-wrap .menu p{
+        font-size: 1.2rem;
+    }
+    #menu-wrap .inner-menu-wrap .menu ul li{
+        font-size: 1.3em;
+    }
+    #menu-wrap .inner-menu-wrap .menu ul li .bold-menu-text{
+        font-size: 1.2em;
+    }
+    #menu-wrap .inner-menu-wrap .menu ul li .price{
+        font-size: 1.2rem;
+    }
+    #wine-list-wrap h3{
+        font-size: 3rem;
+    }
+    #wine-list-wrap .inner-wine-list-wrap h4{
+        font-size: 2.5rem;
+    }
+    #wine-list-wrap .inner-wine-list-wrap .wine-list p{
+        font-size: 1.2rem;
+    }
+    #wine-list-wrap .inner-wine-list-wrap .wine-list ul li{
+        font-size: 1.3em;
+    }
+    #wine-list-wrap .inner-wine-list-wrap .wine-list ul li .bold-wine-list-text{
+        font-size: 1.2em;
+    }
+    #wine-list-wrap .inner-wine-list-wrap .wine-list ul li .price{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width: 40.625rem){ /* 650px */
+  .gallery-wrapper{
+    width: 19.375rem; /* 310px */
+  }
+}
+@media (max-width: 37.5rem){ /* 600px */
+	#main-wrap{
+		background: url("../images/bg-600x600.jpg");
+		background-size: cover;
+	}
+}
+@media (max-width: 34.375rem){ /* 550px */
+    #phone-area .inner-phone-area{
+        width: 90%;
+        height: 10rem;
+    }
+    #phone-area .inner-phone-area h3{
+        font-size: 2rem;
+    }
+    #phone-area .inner-phone-area p{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 25rem){ /* 400px */
+	.about-outer .about figure{
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+	}
+	.about-outer .about img{
+		max-width: 100%;
+		max-height: auto;
+	}
+}
