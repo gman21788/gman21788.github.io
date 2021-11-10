@@ -13,22 +13,22 @@ function fizzBuzz(firstDivisor, secondDivisor, thirdDivisor) {
    	for(let i = 1; i <= 140; i++) {
      		var word = '';  
      		if (i % (firstDivisor * secondDivisor * thirdDivisor) === 0) {
-       			word = word.concat('HotHEAVYcRaBs!');
+       		word = word.concat('HotHEAVYcRaBs!');
      		} else if (i % firstDivisor * secondDivisor === 0) {
-       			word = word.concat('Hot');
+       		word = word.concat('Hot');
      		} else if (i % firstDivisor * thirdDivisor === 0) {
-       			word = word.concat('Heavy');
+       		word = word.concat('Heavy');
 		} else if (i % secondDivisor * thirdDivisor === 0) {
-			word = word.concat('Salty');
+		word = word.concat('Salty');
 		} else if (i % firstDivisor === 0) {
-			word = word.concat('Spicy');		
+		word = word.concat('Spicy');		
 		} else if (i % secondDivisor === 0) {
-			word = word.concat('Seafood-ey');		
+		word = word.concat('Seafood-ey');		
 		} else if (i % thirdDivisor === 0) {
-			word = word.concat('Sandy');		
+		word = word.concat('Sandy');		
 		else {
-       			word = word.concat('Order Crabs!');
-     	}
+       		word = word.concat('Order Crabs!');
+     		}
 	var element1 = document.createElement('li');
 	var newText = document.createTextNode(' ' + word);   
 	element1.appendChild(newText);    
