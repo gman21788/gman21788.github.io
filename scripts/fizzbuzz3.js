@@ -20,7 +20,7 @@ function isDivisible(firstDivisor, secondDivisor) {
 function fizzBuzz(firstDivisor, secondDivisor, thirdDivisor) {
    	for(let i = 1; i <= 140; i++) {
      		var word = '';  
-     		if ((i % (firstDivisor * secondDivisor * thirdDivisor)) === 0) {
+     		if (i % (firstDivisor * secondDivisor * thirdDivisor) === 0) {
        		word = word.concat('HotHEAVYcRaBs!');
      		} else if (i % (firstDivisor * secondDivisor) === 0) {
        		word = word.concat('Hot');
