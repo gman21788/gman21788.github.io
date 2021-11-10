@@ -25,7 +25,9 @@ function fizzBuzz(firstDivisor, secondDivisor, thirdDivisor) {
      		} else if (i % (firstDivisor * secondDivisor) === 0) {
        		word = word.concat('Hot');
      		} else if (i % (firstDivisor * thirdDivisor) === 0) {
-       		word = word.concat('Heavy');		
+       		word = word.concat('Heavy');
+		} else if (i % (secondDivisor * thirdDivisor) === 0) {
+		word = word.concat('Salty');			
 		} else {
        		word = word.concat('Order Crabs!');
      		}
