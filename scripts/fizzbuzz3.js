@@ -25,16 +25,8 @@ function fizzBuzz(firstDivisor, secondDivisor, thirdDivisor) {
      		} else if (i % (firstDivisor * secondDivisor) === 0) {
        		word = word.concat('Hot');
      		} else if (i % (firstDivisor * thirdDivisor) === 0) {
-       		word = word.concat('Heavy');
-			} else if (i % (secondDivisor * thirdDivisor) === 0) {
-			word = word.concat('Salty');
-			} else if (i % firstDivisor === 0) {
-			word = word.concat('Spicy');		
-			} else if (i % secondDivisor === 0) {
-			word = word.concat('Seafood-ey');		
-			} else if (i % thirdDivisor === 0) {
-			word = word.concat('Sandy');		
-			else {
+       		word = word.concat('Heavy');		
+		else {
        		word = word.concat('Order Crabs!');
      		}
 	var element1 = document.createElement('li');
