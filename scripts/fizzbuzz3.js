@@ -4,17 +4,10 @@ function getVars() {
 	let lastName = document.getElementById('lastName').value;
 	let firstDivisor = 3;
 	let secondDivisor = 5;
+	let thirdDivisor = 7;
 	document.getElementById('greeting').textContent = 'Welcome to the Crab Shack, ' + firstName + ' ' + middleInit + ' ' + lastName + '!';
-	fizzBuzz(firstDivisor, secondDivisor);	
+	fizzBuzz(firstDivisor, secondDivisor, thirdDivisor);	
 	}
-
-function isDivisible(firstDivisor, secondDivisor) {
-	if (firstDivisor % secondDivisor === 0) {
-		return true;
-	} else {
-		return false;
-	}
-}
 
 function fizzBuzz(firstDivisor, secondDivisor) {
    	for(let i = 1; i <= 140; i++) {
