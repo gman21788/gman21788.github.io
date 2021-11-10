@@ -18,13 +18,13 @@ function fizzBuzz(firstDivisor, secondDivisor, thirdDivisor) {
        			word = word.concat('Hot');
      		} else if (i % firstDivisor * thirdDivisor === 0) {
        			word = word.concat('Heavy');
-		} else if {i % secondDivisor * thirdDivisor === 0) {
+		} else if (i % secondDivisor * thirdDivisor === 0) {
 			word = word.concat('Salty');
-		} else if {i % firstDivisor === 0) {
+		} else if (i % firstDivisor === 0) {
 			word = word.concat('Spicy');		
-		} else if {i % secondDivisor === 0) {
+		} else if (i % secondDivisor === 0) {
 			word = word.concat('Seafood-ey');		
-		} else if {i % thirdDivisor === 0) {
+		} else if (i % thirdDivisor === 0) {
 			word = word.concat('Sandy');		
 		else {
        			word = word.concat('Order Crabs!');
