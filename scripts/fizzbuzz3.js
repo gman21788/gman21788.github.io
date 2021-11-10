@@ -9,14 +9,6 @@ function getVars() {
 	fizzBuzz(firstDivisor, secondDivisor, thirdDivisor);	
 	}
 
-function isDivisible(firstDivisor, secondDivisor) {
-	if (firstDivisor % secondDivisor === 0) {
-		return true;
-	} else {
-		return false;
-	}
-}
-
 function fizzBuzz(firstDivisor, secondDivisor, thirdDivisor) {
    	for(let i = 1; i <= 140; i++) {
      		var word = '';  
