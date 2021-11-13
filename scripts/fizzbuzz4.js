@@ -10,7 +10,7 @@ function getVars() {
 	let wordChoiceThree = document.getElementById('wordChoiceThree').value;
 	let lineCounter = document.getElementById('lineCounter').value;
 	document.getElementById('greeting').textContent = 'Welcome to the Crab Shack, ' + firstName + ' ' + middleInit + ' ' + lastName + '!';
-	fizzBuzz(primeNumberOne, primeNumberTwo, primeNumberThree);	
+	fizzBuzz(lineCounter, primeNumberOne, primeNumberTwo, primeNumberThree, wordChoiceOne, wordChoiceTwo, wordChoiceThree);	
 	}
 
 function fizzBuzz(lineCounter, primeNumberOne, primeNumberTwo, primeNumberThree, wordChoiceOne, wordChoiceTwo, wordChoiceThree) {
