@@ -6,7 +6,7 @@
 	<link rel = 'stylesheet' 
 	      type = 'text/css' 
 	      href = 'styles/brand.css' />
-	<script src='scripts/fizzbuzz3.js'></script>
+	<script src='scripts/fizzbuzz4.js'></script>
 </head>
 <body>
 	<header>
@@ -26,19 +26,40 @@
 		</nav>		
 	</header>
 	<main>
-		<h1>The Crab Shack Fizz Buzz 3</h1>
+		<h1>The Crab Shack Fizz Buzz 4</h1>
 		<h2 id='greeting'>"Welcome to the Crab Shack YourNameHere!"</h2>
     		<form id='customerInfo'>
-			<label for="firstName">First Name: </label>
-			<input type="text" id="firstName" placeholder="Enter your first name." required>
-			<br>
-			<label for="middleInit">Middle Initial: </label>
-			<input type="text" id="middleInit" placeholder="Enter your middle initial." required>	
-			<br>
-			<label for="lastName">Last Name: </label>
-			<input type="text" id="lastName" placeholder="Enter your last name." required>
-			<br>
-			<input type="button" id="submit" onclick="return getVars()" value="Submit">
+				<label for="firstName">First Name: </label>
+				<input type="text" id="firstName" placeholder="Enter your first name." required>
+				<br>
+				<label for="middleInit">Middle Initial: </label>
+				<input type="text" id="middleInit" placeholder="Enter your middle initial." required>	
+				<br>
+				<label for="lastName">Last Name: </label>
+				<input type="text" id="lastName" placeholder="Enter your last name." required>
+				<br>
+				<label for="primeNumberOne">Prime Number #1: </label>
+				<input type="text" id="primeNumberOne" placeholder="" required>
+				<br>
+				<label for="primeNumberTwo">Prime Number #2: </label>
+				<input type="text" id="primeNumberTwo" placeholder="" required>	
+				<br>
+				<label for="primeNumberThree">Prime Number #3: </label>
+				<input type="text" id="primeNumberThree" placeholder="" required>
+				<br>
+				<label for="wordChoiceOne">Word Choice #1: </label>
+				<input type="text" id="wordChoiceOne" placeholder="hot" required>
+				<br>
+				<label for="wordChoiceTwo">Word Choice #2: </label>
+				<input type="text" id="wordChoiceTwo" placeholder="HEAVY" required>	
+				<br>
+				<label for="wordChoiceThree">Word Choice #3: </label>
+				<input type="text" id="wordChoiceThree" placeholder="CrAbS" required>
+				<br>				
+				<label for="lineCounter">How many combinations do you want to try?: </label>
+				<input type="text" id="lineCounter" placeholder="125" required>
+				<br>					
+				<input type="button" id="submit" onclick="return getVars()" value="Submit">				
     		</form>
 		<ol id="fizzBuzz" start='1'>
 		</ol>
