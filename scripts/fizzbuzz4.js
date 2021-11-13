@@ -13,7 +13,7 @@ function getVars() {
 	fizzBuzz(primeNumberOne, primeNumberTwo, primeNumberThree);	
 	}
 
-function fizzBuzz(primeNumberOne, primeNumberTwo, primeNumberThree, wordChoiceOne, wordChoiceTwo, wordChoiceThree, lineCounter) {
+function fizzBuzz(lineCounter, primeNumberOne, primeNumberTwo, primeNumberThree, wordChoiceOne, wordChoiceTwo, wordChoiceThree) {
    	for(let i = 1; i <= lineCounter; i++) {
      	var word = '';  
      	if (i % (primeNumberOne * primeNumberTwo * primeNumberThree) === 0) {
