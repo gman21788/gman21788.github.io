@@ -22,8 +22,6 @@ function fizzBuzz(lineCounter, primeNumberOne, primeNumberTwo, primeNumberThree,
        	word = word.concat(wordChoiceOne + '' + wordChoiceTwo);
      	} else if (i % (primeNumberOne * primeNumberThree) === 0) {
        	word = word.concat(wordChoiceOne + '' + wordChoiceThree);
-	} else if (i % (primeNumberTwo * primeNumberThree) === 0) {
-	word = word.concat(wordChoiceTwo + '' + wordChoiceThree);
 	} else if (i % primeNumberOne === 0) {
 	word = word.concat(wordChoiceOne);
 	} else if (i % primeNumberTwo === 0) {
