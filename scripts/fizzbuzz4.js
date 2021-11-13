@@ -15,7 +15,7 @@ function getVars() {
 
 function fizzBuzz(lineCounter, primeNumberOne, primeNumberTwo, primeNumberThree, wordChoiceOne, wordChoiceTwo, wordChoiceThree) {
    	for(let i = 1; i <= lineCounter; i++) {
-     	var word = '';  
+     	let word = '';  
      	if (i % (primeNumberOne * primeNumberTwo * primeNumberThree) === 0) {
        	word = word.concat(wordChoiceOne + '' + wordChoiceTwo + '' + wordChoiceThree);
      	} else if (i % (primeNumberOne * primeNumberTwo) === 0) {
