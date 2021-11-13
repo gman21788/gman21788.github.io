@@ -19,17 +19,17 @@ function fizzBuzz(primeNumberOne, primeNumberTwo, primeNumberThree, wordChoiceOn
      	if (i % (primeNumberOne * primeNumberTwo * primeNumberThree) === 0) {
        	word = word.concat(wordChoiceOne + '' + wordChoiceTwo + '' + wordChoiceThree);
      	} else if (i % (primeNumberOne * primeNumberTwo) === 0) {
-       	word = word.concat('Hot');
+       	word = word.concat(wordChoiceOne + '' + wordChoiceTwo);
      	} else if (i % (primeNumberOne * primeNumberThree) === 0) {
-       	word = word.concat('Heavy');
+       	word = word.concat(wordChoiceOne + '' + wordChoiceThree);
 		} else if (i % (primeNumberTwo * primeNumberThree) === 0) {
-		word = word.concat('Salty');
+		word = word.concat(wordChoiceTwo + '' + wordChoiceThree);
 		} else if (i % primeNumberOne === 0) {
-		word = word.concat('Spicy');
+		word = word.concat(wordChoiceOne);
 		} else if (i % primeNumberTwo === 0) {
-		word = word.concat('Seafood-ey');
+		word = word.concat(wordChoiceTwo);
 		} else if (i % thirdDivisor === 0) {
-		word = word.concat('Sandy');			
+		word = word.concat(wordChoiceThree);			
 		} else {
        	word = word.concat('Order Crabs!');
      	}
