@@ -2,27 +2,31 @@ function getVars() {
 	let firstName = document.getElementById('firstName').value;
 	let middleInit = document.getElementById('middleInit').value;	
 	let lastName = document.getElementById('lastName').value;
-	let firstDivisor = 3;
-	let secondDivisor = 5;
-	let thirdDivisor = 7;
+	let primeNumberOne = document.getElementById('primeNumberOne').value;
+	let primeNumberTwo = document.getElementById('primeNumberTwo').value;
+	let primeNumberThree = document.getElementById('primeNumberThree').value;
+	let wordChoiceOne = document.getElementById('wordChoiceOne').value;
+	let wordChoiceTwo = document.getElementById('wordChoiceTwo').value;
+	let wordChoiceThree = document.getElementById('wordChoiceThree').value;
+	let lineCounter = document.getElementById('lineCounter').value;
 	document.getElementById('greeting').textContent = 'Welcome to the Crab Shack, ' + firstName + ' ' + middleInit + ' ' + lastName + '!';
-	fizzBuzz(firstDivisor, secondDivisor, thirdDivisor);	
+	fizzBuzz(primeNumberOne, primeNumberTwo, primeNumberThree);	
 	}
 
-function fizzBuzz(firstDivisor, secondDivisor, thirdDivisor) {
-   	for(let i = 1; i <= 140; i++) {
+function fizzBuzz(primeNumberOne, primeNumberTwo, primeNumberThree, wordChoiceOne, wordChoiceTwo, wordChoiceThree, lineCounter) {
+   	for(let i = 1; i <= lineCounter; i++) {
      	var word = '';  
-     	if (i % (firstDivisor * secondDivisor * thirdDivisor) === 0) {
-       	word = word.concat('HotHEAVYcRaBs!');
-     	} else if (i % (firstDivisor * secondDivisor) === 0) {
+     	if (i % (primeNumberOne * primeNumberTwo * primeNumberThree) === 0) {
+       	word = word.concat(wordChoiceOne + '' + wordChoiceTwo + '' + wordChoiceThree);
+     	} else if (i % (primeNumberOne * primeNumberTwo) === 0) {
        	word = word.concat('Hot');
-     	} else if (i % (firstDivisor * thirdDivisor) === 0) {
+     	} else if (i % (primeNumberOne * primeNumberThree) === 0) {
        	word = word.concat('Heavy');
-		} else if (i % (secondDivisor * thirdDivisor) === 0) {
+		} else if (i % (primeNumberTwo * primeNumberThree) === 0) {
 		word = word.concat('Salty');
-		} else if (i % firstDivisor === 0) {
+		} else if (i % primeNumberOne === 0) {
 		word = word.concat('Spicy');
-		} else if (i % secondDivisor === 0) {
+		} else if (i % primeNumberTwo === 0) {
 		word = word.concat('Seafood-ey');
 		} else if (i % thirdDivisor === 0) {
 		word = word.concat('Sandy');			
