@@ -31,7 +31,7 @@ function fizzBuzz(lineCounter, primeNumberOne, primeNumberTwo, primeNumberThree,
 		} else if (i % thirdDivisor === 0) {
 		word = word.concat(wordChoiceThree);			
 		} else {
-       	word = word.concat('Order Crabs!');
+       	word = word.concat('');
      	}
 	var element1 = document.createElement('li');
 	var newText = document.createTextNode(' ' + word);   
