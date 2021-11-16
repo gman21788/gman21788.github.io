@@ -17,13 +17,13 @@ function fizzBuzz(lineCounter, primeNumberOne, primeNumberTwo, primeNumberThree,
    	for(let i = 1; i <= lineCounter; i++) {
      	let word = '';  
      	if (i % (primeNumberOne * primeNumberTwo * primeNumberThree) === 0) {
-       	word = word.concat(wordChoiceOne + '' + wordChoiceTwo + '' + wordChoiceThree);
+       	word = word.concat(wordChoiceOne + " " + wordChoiceTwo + " " + wordChoiceThree);
      	} else if (i % (primeNumberOne * primeNumberTwo) === 0) {
-       	word = word.concat(wordChoiceOne + '' + wordChoiceTwo);
+       	word = word.concat(wordChoiceOne + " " + wordChoiceTwo);
      	} else if (i % (primeNumberOne * primeNumberThree) === 0) {
-       	word = word.concat(wordChoiceOne + '' + wordChoiceThree);
+       	word = word.concat(wordChoiceOne + " " + wordChoiceThree);
 	} else if (i % (primeNumberTwo * primeNumberThree) ===0) {
-	word = word.concat(wordChoiceTwo + '' + wordChoiceThree);
+	word = word.concat(wordChoiceTwo + " " + wordChoiceThree);
 	} else if (i % primeNumberOne === 0) {
 	word = word.concat(wordChoiceOne);
 	} else if (i % primeNumberTwo === 0) {
@@ -31,7 +31,7 @@ function fizzBuzz(lineCounter, primeNumberOne, primeNumberTwo, primeNumberThree,
 	} else if (i % primeNumberThree === 0) {
 	word = word.concat(wordChoiceThree);			
 	} else {
-       	word = word.concat('Order Crabs!');
+       	word = word.concat('---');
      	}
 	var element1 = document.createElement('li');
 	var newText = document.createTextNode(' ' + word);   
